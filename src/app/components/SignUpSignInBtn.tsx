@@ -21,7 +21,7 @@ const SignUpSignInBtnPage = () => {
        redirect('/signIn')
     }   
     
-   if (!session) {
+   if (isPending) {
   return (
     <div className="flex items-center justify-center bg-gray-950">
       <div className="flex flex-col items-center gap-4">
